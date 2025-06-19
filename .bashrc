@@ -1,21 +1,38 @@
-# The following code needs to be appended after all the codes in the .bashrc file.
+# My Custom Configurations #
 
-# My Variables
+# Paths -----------------------------------------
+
+# Java
+JAVA_HOME=/home/shourov/Documents/softwares/java/openjdk/21
+# JAVA_HOME=/home/shourov/Documents/softwares/java/oracle/21.0.3
+export JAVA_HOME
+PATH=$JAVA_HOME/bin:$PATH
+export PATH
+
+# Gradle
+GRADLE_PATH=/home/shourov/Documents/softwares/gradle/gradle-8.13/bin
+PATH=$PATH:$GRADLE_PATH
+export PATH
+
+# Variables -------------------------------------
 export DOCKER_CONFIG="$HOME/.docker"
 
-# My Aliases
-alias gpp='git pull && git push'
+# Aliases ---------------------------------------
 alias gadd='git add .'
-alias gsm='git switch main'
 alias swap='git switch -'
 alias yd='yarn dev'
 alias gpull='git pull'
 alias gpush='git push'
+alias dcd='docker compose down'
+alias dcu='docker compose up -d'
 
+# Python Virtual Environment Management
+alias venvwizard="source $HOME/manage_venvs.sh"
+
+# Disable Firewall
 alias df='sudo ufw disable'
 
-# My Functions
-# Function that performs a commit
+# Functions -------------------------------------
 function gcm() {
   if [ -z "$1" ] && [ -z "$2" ]; then
     echo "No message given!";
@@ -31,7 +48,6 @@ function gcm() {
   fi
 }
 
-# Function that creates a new branch
 function gbranch() {
   if [ -z "$1" ]; then
     git branch;
