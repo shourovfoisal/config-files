@@ -27,6 +27,8 @@ alias dcd='docker compose down'
 alias dcu='docker compose up -d'
 alias com="$HOME/Documents/scripts/com.sh"
 alias shortcuts="cat $HOME/Documents/scripts/shortcuts.txt"
+alias editshortcuts="nano $HOME/Documents/scripts/shortcuts.txt"
+alias samplecsv="$HOME/Documents/scripts/samplecsv.sh"
 
 alias vwiz="source $HOME/manage_venvs.sh"
 alias cartup="$HOME/Documents/scripts/cartup.sh"
