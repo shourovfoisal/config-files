@@ -25,11 +25,13 @@ alias gpull='git pull'
 alias gpush='git push'
 alias dcd='docker compose down'
 alias dcu='docker compose up -d'
+alias com="$HOME/Documents/scripts/com.sh"
+alias shortcuts="cat $HOME/Documents/scripts/shortcuts.txt"
 
-# Python Virtual Environment Management
-alias venvwizard="source $HOME/manage_venvs.sh"
+alias vwiz="source $HOME/manage_venvs.sh"
+alias cartup="$HOME/Documents/scripts/cartup.sh"
+alias redis-dev="$HOME/Documents/scripts/redis-dev.sh"
 
-# Disable Firewall
 alias df='sudo ufw disable'
 
 # Functions -------------------------------------

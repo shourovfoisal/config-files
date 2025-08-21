@@ -1,0 +1,11 @@
+INTELLIJ:
+ALT + J                                = Select occurrences one by one
+CTRL + ALT + SHIFT + J                 = Select all case sensitively matching occurences
+CTRL + ALT + L                         = Format document
+
+VS Code:
+CTRL + SHIFT + I                       = Format the current document
+
+UBUNTU:
+CTRL + ALT + T                         = Open terminal anytime
+

@@ -1,0 +1,1 @@
+docker logs -f <cartup_container_name>
